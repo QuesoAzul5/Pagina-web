@@ -1,182 +1,75 @@
-.merienda-font {
-    font-family: "Merienda", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-:visited {
+html {
+    font-size: 16px;
+    font-family: "Merienda", sans-serif;
     color: #ffffff;
 }
-
-:link {
-    color: #ffffff;
-}
-
-
 body {
+    margin: 0;
+    padding: 0;
     background-color: #000000;
-    color: #ffffff;
-    font-family: "Merienda", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;                /* Activar Flexbox */
-    flex-direction: column;       /* Alinear los elementos en una columna */
-    justify-content: center;      /* Centrar verticalmente */
-    align-items: center;          /* Centrar horizontalmente */
-    min-height: 100vh;            /* Asegurar que ocupe toda la altura de la ventana */
-    margin: 0 auto;                    /* Eliminar márgenes predeterminados */
-    padding: 0;                   /* Eliminar padding predeterminado */
-    width: 50%;                   /* Establecer el ancho en la mitad de la página */
-    box-sizing: border-box;       /* Incluir padding y borde en el cálculo del ancho */
     text-align: center;
-
+    
 }
-
 
 header {
     background-color: #000000;
     color: #ffffff;
-    padding: 1em 0;
+    padding: 1rem;
     text-align: center;
-    font-size: 1.5em;
-    font-family: "Macondo", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-}
 
-
-#div-logo {
-    text-align: center;
-    color: rgb(123, 123, 123);
-}
-
-#logo {
-    width: 180px;
-    height: 180px;
-    
-}
-
-#titulo {
-    font-family: "Merienda", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2em;
-    text-align: center;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-#titulo-h2 {
-    font-family: "Merienda", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1em;
-    text-align: center;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-#imagen {
-    max-width: 1000px;
-    height: auto;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin: 0 auto;
-}
-
-.lista {
-    list-style: none; /* Quita los puntos de la lista */
-    padding: 0;
-    margin: 0;
-}
-
-.lista li {
-    display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
-
-hr {
-    border: 1px solid #8e8d8d;
-}
-
-main {
-    padding: 2em;
-    background-color: #000000;
-    color: #ffffff;
-}
-
-#contenedor-fecha {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    text-decoration: underline;
-    font-size: 1.5em;
-}
-
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1em 0;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-#texto {
-    font-family: "Merienda", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    text-align: center;
-    color: white;
 }
 
 .contenedor {
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    min-height: 60vh; /* Ocupa toda la altura de la pantalla */
+    margin: auto;
+    padding: auto;
+    max-width: 1200px;
 }
 
-.contenedor-texto {
-    align-items: center;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 60px;
-}
-
-.contenedor-imagen {
-    max-width: 1000px;
-    height: auto;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-bottom: 100px;
-}
-
-#imagen {
+.imagen-playa {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-#texto-mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 200px 1px 118px;
+a.links{
+    text-shadow: 3px 2px 3px #e6e6e6;
 }
 
-#mapa {
-    width: 100%;
-    height: 400px;
-    margin: 0px 0px 300px 0px;
+.lista {
+    list-style-type: none;
+    
+    margin: 0;
+    padding: 0;
 }
+
+.lista li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.lista li a:hover {
+    color: #6b8c9b;
+}
+
+
+.links:link {
+    color: #ffffff;
+}
+
+.links:visited {
+    color: #ffffff;
+}
+
+.links:hover {
+    color: #6b8c9b;
+}
+
+.links:active {
+    color: #ffffff;
+}
+
+hr {
+    border: 1px solid #ffffff;
+    margin: 0px 0px;
+}
+
+
