@@ -4,72 +4,96 @@ html {
     color: #ffffff;
 }
 body {
-    margin: 0;
+    margin-top: auto;
     padding: 0;
     background-color: #000000;
-    text-align: center;
     
 }
 
 header {
+    display: block;
     background-color: #000000;
     color: #ffffff;
-    padding: 1rem;
-    text-align: center;
+    padding-bottom: 0;
+    padding-top: 40px;
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 0;
 }
 
 .contenedor {
+    display: block;
+    text-align: center;
     margin: auto;
     padding: auto;
-    max-width: 1200px;
 }
 
-.imagen-playa {
-    width: 100%;
-    height: 100%;
+
+.lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 a.links{
     text-shadow: 3px 2px 3px #e6e6e6;
+
 }
 
-.lista {
-    list-style-type: none;
-    
-    margin: 0;
-    padding: 0;
+.links:active {
+    color: #5c5c5c;
 }
 
-.lista li {
-    display: inline;
-    margin-right: 20px;
+.links:hover {
+    color: #666666;
 }
-
-.lista li a:hover {
-    color: #6b8c9b;
-}
-
 
 .links:link {
-    color: #ffffff;
+    color: #605d5d;
 }
-
 .links:visited {
     color: #ffffff;
 }
 
-.links:hover {
-    color: #6b8c9b;
+.imagen-playa {
+    display: block;
+    margin: auto;
+    padding: auto;
+    transform: scale(0.7);
+    width: 100%;
+    height: auto;
 }
 
-.links:active {
+.imagen-finca {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: auto;
+}
+
+.fecha {
+    display: block;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #000000;
     color: #ffffff;
-}
-
-hr {
-    border: 1px solid #ffffff;
-    margin: 0px 0px;
+    padding: 1rem;
+    text-align: center;
 }
 
 
