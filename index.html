@@ -54,6 +54,35 @@
         <div class="contenedor-block">
             <img class="imagen-finca" src="img/finca.webp" alt="Foto de la Finca el jardín">
         </div>
+        <div class="contenedor-flex">
+            <hr>
+            <form class="formulario">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="correo" placeholder="Correo electrónico">
+                <fieldset>
+                    <legend>¿Asistirás a la boda?</legend>
+                    <div>
+                        <input type="radio" id="si" name="asistencia" value="si">
+                        <label for="si">Sí</label>
+                        <input type="radio" id="acompañante" placeholder="Nombre del acompañante">
+                        <label for="acompañante">Si, con acompañante</label>
+                        <input type="radio" id="no" name="asistencia" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Marca las siguientes opciones en caso de tener alguna necesidad especial</legend>
+                        <input type="radio" id="vegetariano" placeholder="Vegetariano">
+                        <label for="vegetariano">Menú vegetariano/Vegano</label>
+                        <input type="radio" id="lactosa" placeholder="Intolerancia a la lactosa">
+                        <label for="Intolerancia">Intolerancia a la lactosa</label>
+                        <input type="radio" id="celiaquia" placeholder="celiaquia">
+                        <label for="celiaquia">Celiaquía</label>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
