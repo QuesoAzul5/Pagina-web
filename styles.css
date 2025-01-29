@@ -88,6 +88,13 @@ a.links{
     text-align: center;
 }
 
+#qr {
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: auto;
+}
+
 
 footer {
     background-color: #000000;
