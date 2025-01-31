@@ -13,19 +13,18 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="contenedor">
             <a href="index.html">
-
                 <img width="128" height="128" src="img/capa-0.webp" alt="Logo de la Página">
             </a>
         </div>
-        <div>
+        <div class="contenedor">
             <h1>
                 <a href="index.html" class="links">ANDRÉS Y MARÍA</a>
+                <h2>Te invitamos a pasar con nosotros el día de nuestra boda.</h2>
             </h1>
         </div>
         <div>
-            <h2>Te invitamos a pasar con nosotros el día de nuestra boda.</h2>
             <lu class="lista">
                 <li></li>
                     <a href="index.html" class="links">Inicio</a>
@@ -40,51 +39,69 @@
         </div>
     </header>
     <main>
-        <div class="contenedor-block">
+        <div class="contenedor">
             <img class="imagen-playa" src="img/playa1.jpg" alt="Foto de Andrés y María" >
         </div>
-        <div class="contenedor-block">
-            <div>
-                <h2 id="fecha">18- 10- 2025 13:00</h2>
-            </div>
-            <p>Nos gustaría contar contigo en el día de nuestra boda, y estamos muy contentos de invitarte a la ceremonia y celebración.</p>
-            <p>Para nosotros es muy importante pasar este día junto a nuestras familias y amigos, así que esperamos poder veros a todos allí.</p>
-            <p>El enlace se llevará a cabo en la Finca el jardín, donde habrá comida, bebida y fiesta para todos.</p>
-        </div>
-        <div class="contenedor-block">
-            <img class="imagen-finca" src="img/finca.webp" alt="Foto de la Finca el jardín">
-        </div>
-        <div class="contenedor-flex">
-            <hr>
-            <form class="formulario">
-                <input type="text" id="nombre" placeholder="Nombre">
-                <input type="text" id="correo" placeholder="Correo electrónico">
-                <fieldset>
-                    <legend>¿Asistirás a la boda?</legend>
-                    <div>
-                        <input type="radio" id="si" name="asistencia" value="si">
-                        <label for="si">Sí</label>
-                        <input type="radio" id="acompañante" placeholder="Nombre del acompañante">
-                        <label for="acompañante">Si, con acompañante</label>
-                        <input type="radio" id="no" name="asistencia" value="no">
-                        <label for="no">No</label>
-                    </div>
-                </fieldset>
-                <div>
-                    <fieldset>
-                        <legend>Marca las siguientes opciones en caso de tener alguna necesidad especial</legend>
-                        <input type="radio" id="vegetariano" placeholder="Vegetariano">
-                        <label for="vegetariano">Menú vegetariano/Vegano</label>
-                        <input type="radio" id="lactosa" placeholder="Intolerancia a la lactosa">
-                        <label for="Intolerancia">Intolerancia a la lactosa</label>
-                        <input type="radio" id="celiaquia" placeholder="celiaquia">
-                        <label for="celiaquia">Celiaquía</label>
-                    </fieldset>
+
+        <div class="guia"></div>
+            <div class="contenedor">
+                <h id="fecha">Fecha de la boda: <br> 18- 10- 2025 13:00</h>
+                <div class="cuenta-atras">
+                    <script src="scripts.js"></script>
+                    <div id="contador"></div>
                 </div>
-            </form>
+                <div class="parrafo">
+                    <p>Nos gustaría contar contigo en el día de nuestra boda, y estamos muy contentos de invitarte a la ceremonia y celebración.</p>
+                    <p>Para nosotros es muy importante pasar este día junto a nuestras familias y amigos, así que esperamos poder veros a todos allí.</p>
+                    <p>El enlace se llevará a cabo en la Finca el jardín, donde habrá comida, bebida y fiesta para todos.</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div>
+                    <img class="imagen-finca" src="img/finca.webp" alt="Foto de la Finca el jardín">
+                </div>
+            </div>
+            <div class="contenedor">
+                <hr>
+                <p>No olvides confirmar tu asistencia, a través de whatsapp a María o Andrés,
+                    o rellenando el siguiente formulario:</p>
+                <div class="contenedor">
+                    <form>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="correo" placeholder="Correo electrónico">
+                        <fieldset>
+                            <legend>¿Asistirás a la boda?</legend>
+                            <div>
+                                <input type="radio" id="si" name="asistencia" value="si">
+                                <label for="si">Sí</label>
+                                <input type="radio" id="acompañante" placeholder="Nombre del acompañante">
+                                <label for="acompañante">Si, con acompañante</label>
+                                <input type="radio" id="no" name="asistencia" value="no">
+                                <label for="no">No</label>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <fieldset>
+                                <legend>Marca las siguientes opciones en caso de tener alguna necesidad especial</legend>
+                                <input type="radio" id="vegetariano" placeholder="Vegetariano">
+                                <label for="vegetariano">Menú vegetariano/Vegano</label>
+                                <input type="radio" id="lactosa" placeholder="Intolerancia a la lactosa">
+                                <label for="Intolerancia">Intolerancia a la lactosa</label>
+                                <input type="radio" id="celiaquia" placeholder="celiaquia">
+                                <label for="celiaquia">Celiaquía</label>
+                            </fieldset>
+                            <div class="contenedor-area">
+                                <textarea name="textarea" placeholder=" " id=""></textarea>
+                                    <div class="contenedor-label">
+                                        <label for="textarea">Indícanos cualquier otra cosa que debamos tener en cuenta o dejanos un mensaje para la boda:</label>
+                                    </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
-
     <footer>
         <h3>Algo sobre los derechos y blablabla</h3>
         <h3>Contacto: </h3>

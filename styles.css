@@ -1,27 +1,53 @@
 html {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Merienda", sans-serif;
-    color: #ffffff;
 }
 body {
-    margin-top: auto;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #000000;
-    font-size: 24;
-    
-    
+    color: #ffffff;
 }
 
 header {
-    display: block;
     background-color: #000000;
     color: #ffffff;
-    padding-bottom: 0;
-    padding-top: 40px;
-    display: block;
-    text-align: center;
-    margin: auto;
 
+}
+.guia {
+    padding: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.links{
+    text-shadow: 1px 1px 6px #c6c6c6;
+}
+
+.links:active {
+    color: #ffffff;
+}
+
+.links:hover {
+    color: #7d7d7d;
+}
+
+.links:link {
+    color: #ffffff;
+}
+.links:visited {
+    color: #ffffff;
 }
 
 main {
@@ -32,58 +58,44 @@ main {
     padding-top: 0;
 }
 
-.contenedor-block {
-    display: block;
-    text-align: center;
-    margin: auto;
-    padding: auto;
+#contador {
+    font-size: 2rem;
+    background: rgb(46, 45, 45);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 2px 4px 8px rgba(111, 106, 106, 0.4);
+    margin: 40px 0px;
 
 }
 
-.contenedor-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: auto;
-    padding: auto;
+.cuenta-atras {
+    margin: 0px 20px;
+}
+.parrafo {
+    margin: 30px;
 }
 
-.contenedor-flex > hr {
-    width: 30%;
-    border: 1px solid #ffffff;
-    margin: 40px auto;
-    padding: auto;
+#fecha {
+    border: 2px solid white;
+    border-bottom: #000000;
+    border-top: #000000;
+    margin: 20px;
 }
 
-
-.lista {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-a.links{
-    text-shadow: 3px 2px 3px #e6e6e6;
-
-}
-
-.links:active {
-    color: #fff;
-}
-
-.links:hover {
-    color: #666666;
-}
-
-.links:link {
+.preboda {
     color: #ffffff;
+    margin: auto;
 }
-.links:visited {
-    color: #ffffff;
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center;  /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center; /* Alinear el texto */
 }
+
 
 .imagen-playa {
     margin: 40px;
@@ -99,79 +111,56 @@ a.links{
     }
   }
 
-.imagen-finca {
-    margin: auto;
-    padding: auto;
+  @media (max-width: 800px) {
+    .imagen-finca {
+      max-width: 100%;
+      margin: 0;
+      padding: auto;
+    }
+  }
+
+
+
+.contenedor p {
+    font-size: 1.2rem;
+    color: #d8d8d8;
+    margin-top: 20px;
+}
+
+.contenedor-area {
+    position: relative;
+    width: 300px;
+}
+
+textarea {
     width: 100%;
-    height: auto;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    height: 100px;
+    background: #000000;
 }
 
-.fecha {
-    display: block;
-    margin: auto;
-    padding: auto;
-    text-align: center;
-}
+.contenedor label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 1rem;
+    color: #888;
+    transition: 0.3s ease;
+    background: #000000;
+    padding: 0 5px;
 
-#qr {
-    width: 30vh;
-    margin: auto;
-    padding: auto;
-}
-
-#subir-fotos {
-    margin: auto;
-    padding: auto;
-}
-
-.formulario {
-    display: flex;
-    box-sizing: border-box;
-    flex: 0 0 100%;
-    gap: 1rem;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 20px 0;
-    padding: auto;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    padding: auto;
-    border: 1px solid #706e6e;
-    border-radius: 10px;
-    padding: 1rem;
-    max-width: 800px;
 }
 
 
-#nombre {
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-    padding: auto;
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #007BFF;
 }
-
-#correo {
-    width: 100%;
-    margin: 10px 0;
-    padding: auto;
-}
-
-.mapa {
-    margin: auto;
-    padding: auto;
-}
-
-
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
-}
-
-
