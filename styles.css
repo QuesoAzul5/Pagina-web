@@ -37,7 +37,7 @@ h2 {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .links {
@@ -96,8 +96,9 @@ main {
 .imagen-finca {
     max-width: 1200px; /* Ajusta este valor según el tamaño máximo deseado */
     height: auto; /* Mantiene la proporción de la imagen */
-    margin: 5px; /* Añade un margen para separar la imagen del contenido circundante */
+    margin: 10px; /* Añade un margen para separar la imagen del contenido circundante */
     padding: 0;
+    border-radius: 10px;
 }
 
 #contador {
@@ -127,10 +128,6 @@ main {
 }
 
 
-#qr {
-    width: 300px;
-}
-
 #subir-fotos {
     flex-direction: column;
     justify-content: center;
@@ -140,7 +137,7 @@ main {
 .boton {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin: 20px;
     background-color: #ff69b4;
     color: white;
     text-decoration: none;
@@ -148,22 +145,39 @@ main {
 }
 
 .gallery {
-    border-radius: 20px solid black;
+    border-radius: 5px solid black;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 4px;
-    padding: 10px;
+    gap: 5px;
+    padding: 5px;
 }
 
 iframe {
     background-color: #6b6b6b; /* Color de fondo */
-    border-radius: 40px; /* Bordes redondeados opcionales */
-    padding: 10px; /* Espacio interno opcional */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-sizing: border-box;
+}
+
+.contenedor-secundario h3 {
+    margin: 100px 0 0 0;
+    align-self: flex-start;
+}
+
+.contenedor iframe {
+    margin: 10px 0 0 0;
+
 }
 
 .gallery img {
-    background-color: #000000;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+}
+
+div h2 {
+    margin: 20px ;
+}
+
+.contacto {
+    align-self: flex-start;
+    margin: 60px 0 100px 0;
 }
