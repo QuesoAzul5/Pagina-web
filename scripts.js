@@ -51,3 +51,5 @@ document.addEventListener("DOMContentLoaded", function() {
     const intervalo = setInterval(calcularDiferenciaTiempo, 1000);
     calcularDiferenciaTiempo(); // Ejecutar inmediatamente
 });
+
+
