@@ -148,12 +148,21 @@ main {
 }
 
 .gallery {
+    border-radius: 20px solid black;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
     padding: 20px;
 }
+
+iframe {
+    background-color: #6b6b6b; /* Color de fondo */
+    border-radius: 40px; /* Bordes redondeados opcionales */
+    padding: 0px; /* Espacio interno opcional */
+}
+
 .gallery img {
+    background-color: #000000;
     width: 100%;
     height: auto;
     border-radius: 10px;
