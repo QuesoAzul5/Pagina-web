@@ -158,15 +158,6 @@ iframe {
     box-sizing: border-box;
 }
 
-.contenedor-secundario h3 {
-    margin: 100px 0 0 0;
-    align-self: flex-start;
-}
-
-.contenedor iframe {
-    margin: 10px 0 0 0;
-
-}
 
 .gallery img {
     width: 100%;
@@ -175,6 +166,37 @@ iframe {
 
 div h2 {
     margin: 20px ;
+}
+
+.contenedor h3 {
+    margin: 100px 0 0 0;
+    align-self: flex-start;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 700px) {
+    .mapa-frame {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.mapa h3{
+    align-self: flex-start;
+    margin: 100px 0 0 0;
 }
 
 .contacto {
