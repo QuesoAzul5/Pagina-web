@@ -144,20 +144,25 @@ main {
     border-radius: 5px;
 }
 
-.gallery {
-    border-radius: 5px solid black;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 5px;
-    padding: 5px;
+.contenedor-galeria {
+    background-color: #4d4d4d;  /* Color de fondo */
+    padding: 20px;              /* Espaciado interno */
+    border-radius: 20px;         /* Bordes redondeados */
+    width: 100%;                 /* Ocupar todo el ancho */
+    max-width: 800px;            /* Límite para pantallas grandes */
+    margin: 0 auto;              /* Centrar */
+    box-sizing: border-box;      /* Ajusta el tamaño sin desbordar */
 }
 
-iframe {
-    background-color: #6b6b6b; /* Color de fondo */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    box-sizing: border-box;
-}
 
+.contenedor-galeria iframe {
+    width: 100%;  /* Se ajusta al tamaño del contenedor */
+    height: 600px;
+    border: 300px; /* Sin bordes extra */
+    border-radius: 10px;
+    padding: 0px;
+    background-color: #686868;
+}
 
 .gallery img {
     width: 100%;
@@ -174,27 +179,25 @@ div h2 {
 }
 
 .mapa {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    padding: 0px;
+    max-width: 1300px;
+    margin: 20px auto;
     box-sizing: border-box;
 }
 
-
-
-@media (max-width: 700px) {
-    .mapa-frame {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+.mapa iframe {
+    max-width: 1200px; /* Tamaño máximo en pantallas grandes */
+    min-width: 360px;
+    min-height: 360px;
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    margin: auto auto auto 1px; /* Espaciado arriba/abajo y centrado */
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 8px 8px 30px rgba(198, 18, 18, 0.4);
 }
 
 .mapa h3{
+    display: flex;
     align-self: flex-start;
     margin: 100px 0 0 0;
 }
