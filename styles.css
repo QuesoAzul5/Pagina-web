@@ -141,3 +141,12 @@ colabora.html main {
     width: 300px;
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
