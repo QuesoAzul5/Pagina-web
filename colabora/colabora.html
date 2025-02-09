@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colabora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Macondo&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora&family=Macondo&family=Merienda:wght@300..900&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img width="128" height="128" src="img/capa-0.webp" alt="Logo de la Página">
+            </a>
+        </div>
+        <div>
+            <h1>
+                <a href="index.html" class="links">ANDRÉS Y MARÍA</a>
+                <h2>Te invitamos a pasar con nosotros el día de nuestra boda.</h2>
+            </h1>
+        </div>
+        <div>
+            <lu class="lista">
+                <li></li>
+                    <a href="index.html" class="links">Inicio</a>
+                <li></li>
+                    <a href="colabora/colabora.html" class="links">Galería de fotos</a>
+            </lu>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div>
+                <h2>Nos gustaría haceros participes de la celebración, por lo que os dejamos 
+                una galería para que podáis hacernos llegar todos los momentos que hayáis inmortalizado y queráis compartir con nosotros.</h2>
+            </div>
+            <div class="contenedor-galeria">
+                <a href="https://driveuploader.com/upload/RCjGvqcZjZ" target="_blank" class="boton">Subir Fotos</a>
+                
+                <iframe id="miIframe" class="gallery" src="https://script.google.com/macros/s/AKfycbz4Y_Pbifg-2HW7qZATup1foT5uxcSQz-uNYl7G7fqAk9bBf6MbzN5N_mu1oJSZmS8-pA/exec"
+                width="100%" height="600" 
+                style="border: none;"></iframe>
+                <div id="galeria">
+
+                    <!-- Lightbox (ventana emergente) -->
+                    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+                        <img id="lightbox-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <h3>Contacto: </h3>
+    </footer>
+</body>
+</html>

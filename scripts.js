@@ -53,3 +53,44 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+const carpetaID = "1g6BCGgW92mysHsGJ2mGJfXNwbpRpqCuW"; // Reemplaza con el ID de tu carpeta de Google Drive
+const apiKey = "AIzaSyA6uTscI3iIWiSdlIYu51Nz5S3xPhwsaB0"; // Reemplaza con tu API Key de Google Drive
+
+async function cargarImagenes() {
+    const url = `https://www.googleapis.com/drive/v3/files?q='${carpetaID}'+in+parents&key=${apiKey}&fields=files(id,name)`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const galeria = document.getElementById("galeria");
+
+        data.files.forEach(file => {
+            const img = document.createElement("img");
+            img.src = `https://drive.google.com/uc?id=${file.id}`;
+            img.onclick = () => abrirLightbox(img.src);
+            galeria.appendChild(img);
+        });
+    } catch (error) {
+        console.error("Error cargando imágenes:", error);
+    }
+}
+
+// Función para abrir el Lightbox
+function abrirLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+// Función para cerrar el Lightbox
+function cerrarLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+
+// Cargar imágenes al cargar la página
+document.addEventListener("DOMContentLoaded", cargarImagenes);
+
+
+
+document.getElementById("miIframe").addEventListener("click", function() {
+    window.open("https://drive.google.com/drive/folders/1g6BCGgW92mysHsGJ2mGJfXNwbpRpqCuW", "_blank");
+});
